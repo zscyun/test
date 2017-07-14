@@ -1,0 +1,22 @@
+eclipse
+sbt-version
+reload
+container:
+~container:
+exit
+container:
+reload
+container:
+container
+container:start
+reload
+container:start
+ ~jetty:start
+reload
+ ~jetty:start
+exit
+reload
+jetty:start
+jetty:stop
+jetty:
+jetty:start

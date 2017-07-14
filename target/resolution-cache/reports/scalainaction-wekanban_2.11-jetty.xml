@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="scalainaction"
+		module="wekanban_2.11"
+		revision="0.1"
+		conf="jetty"
+		confs="compile, runtime, test, provided, optional, container, jetty, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20170606164951"/>
+	<dependencies>
+		<module organisation="org.eclipse.jetty" name="jetty-runner">
+			<revision name="9.3.13.v20161014" status="release" pubdate="20161015022724" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
+				<metadata-artifact status="no" details="" size="10206" time="0" location="D:\sbtrepo\cache\org.eclipse.jetty\jetty-runner\ivy-9.3.13.v20161014.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-runner/9.3.13.v20161014/jetty-runner-9.3.13.v20161014.pom"/>
+				<caller organisation="scalainaction" name="wekanban_2.11" conf="jetty" rev="9.3.13.v20161014" rev-constraint-default="9.3.13.v20161014" rev-constraint-dynamic="9.3.13.v20161014" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="jetty-runner" type="jar" ext="jar" status="successful" details="" size="6209110" time="14304" location="D:\sbtrepo\cache\org.eclipse.jetty\jetty-runner\jars\jetty-runner-9.3.13.v20161014.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-runner/9.3.13.v20161014/jetty-runner-9.3.13.v20161014.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="scalainaction"
+		module="wekanban_2.11"
+		revision="0.1"
+		conf="test"
+		confs="compile, runtime, test, provided, optional, container, jetty, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20170606164951"/>
+	<dependencies>
+		<module organisation="org.eclipse.jetty" name="jetty-webapp">
+			<revision name="7.3.0.v20110203" status="release" pubdate="20110204004410" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
+				<metadata-artifact status="no" details="" size="6793" time="0" location="D:\sbtrepo\cache\org.eclipse.jetty\jetty-webapp\ivy-7.3.0.v20110203.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-webapp/7.3.0.v20110203/jetty-webapp-7.3.0.v20110203.pom"/>
+				<caller organisation="scalainaction" name="wekanban_2.11" conf="test, compile, runtime" rev="7.3.0.v20110203" rev-constraint-default="7.3.0.v20110203" rev-constraint-dynamic="7.3.0.v20110203" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="jetty-webapp" type="jar" ext="jar" status="successful" details="" size="95243" time="1615" location="D:\sbtrepo\cache\org.eclipse.jetty\jetty-webapp\jars\jetty-webapp-7.3.0.v20110203.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-webapp/7.3.0.v20110203/jetty-webapp-7.3.0.v20110203.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-servlet">
+			<revision name="7.3.0.v20110203" status="release" pubdate="20110204004207" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
+				<metadata-artifact status="no" details="" size="6720" time="0" location="D:\sbtrepo\cache\org.eclipse.jetty\jetty-servlet\ivy-7.3.0.v20110203.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-servlet/7.3.0.v20110203/jetty-servlet-7.3.0.v20110203.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-webapp" conf="default, compile, runtime, master" rev="7.3.0.v20110203" rev-constraint-default="7.3.0.v20110203" rev-constraint-dynamic="7.3.0.v20110203" callerrev="7.3.0.v20110203"/>
+				<artifacts>
+					<artifact name="jetty-servlet" type="jar" ext="jar" status="successful" details="" size="81021" time="1602" location="D:\sbtrepo\cache\org.eclipse.jetty\jetty-servlet\jars\jetty-servlet-7.3.0.v20110203.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-servlet/7.3.0.v20110203/jetty-servlet-7.3.0.v20110203.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-security">
+			<revision name="7.3.0.v20110203" status="release" pubdate="20110204004150" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
+				<metadata-artifact status="no" details="" size="6505" time="0" location="D:\sbtrepo\cache\org.eclipse.jetty\jetty-security\ivy-7.3.0.v20110203.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-security/7.3.0.v20110203/jetty-security-7.3.0.v20110203.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-servlet" conf="compile, runtime" rev="7.3.0.v20110203" rev-constraint-default="7.3.0.v20110203" rev-constraint-dynamic="7.3.0.v20110203" callerrev="7.3.0.v20110203"/>
+				<artifacts>
+					<artifact name="jetty-security" type="jar" ext="jar" status="successful" details="" size="82003" time="2397" location="D:\sbtrepo\cache\org.eclipse.jetty\jetty-security\jars\jetty-security-7.3.0.v20110203.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-security/7.3.0.v20110203/jetty-security-7.3.0.v20110203.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-server">
+			<revision name="7.3.0.v20110203" status="release" pubdate="20110204004054" resolver="sbt-chain" artresolver="sbt-chain" homepage="${jetty.url}" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
+				<metadata-artifact status="no" details="" size="6955" time="0" location="D:\sbtrepo\cache\org.eclipse.jetty\jetty-server\ivy-7.3.0.v20110203.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-server/7.3.0.v20110203/jetty-server-7.3.0.v20110203.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-security" conf="compile, runtime" rev="7.3.0.v20110203" rev-constraint-default="7.3.0.v20110203" rev-constraint-dynamic="7.3.0.v20110203" callerrev="7.3.0.v20110203"/>
+				<artifacts>
+					<artifact name="jetty-server" type="jar" ext="jar" status="successful" details="" size="291131" time="3502" location="D:\sbtrepo\cache\org.eclipse.jetty\jetty-server\jars\jetty-server-7.3.0.v20110203.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-server/7.3.0.v20110203/jetty-server-7.3.0.v20110203.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-http">
+			<revision name="7.3.0.v20110203" status="release" pubdate="20110204003722" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
+				<metadata-artifact status="no" details="" size="6386" time="0" location="D:\sbtrepo\cache\org.eclipse.jetty\jetty-http\ivy-7.3.0.v20110203.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/7.3.0.v20110203/jetty-http-7.3.0.v20110203.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-server" conf="compile, runtime" rev="7.3.0.v20110203" rev-constraint-default="7.3.0.v20110203" rev-constraint-dynamic="7.3.0.v20110203" callerrev="7.3.0.v20110203"/>
+				<artifacts>
+					<artifact name="jetty-http" type="jar" ext="jar" status="successful" details="" size="99390" time="1906" location="D:\sbtrepo\cache\org.eclipse.jetty\jetty-http\jars\jetty-http-7.3.0.v20110203.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/7.3.0.v20110203/jetty-http-7.3.0.v20110203.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-io">
+			<revision name="7.3.0.v20110203" status="release" pubdate="20110204003702" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
+				<metadata-artifact status="no" details="" size="6382" time="0" location="D:\sbtrepo\cache\org.eclipse.jetty\jetty-io\ivy-7.3.0.v20110203.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/7.3.0.v20110203/jetty-io-7.3.0.v20110203.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-http" conf="compile, runtime" rev="7.3.0.v20110203" rev-constraint-default="7.3.0.v20110203" rev-constraint-dynamic="7.3.0.v20110203" callerrev="7.3.0.v20110203"/>
+				<artifacts>
+					<artifact name="jetty-io" type="jar" ext="jar" status="successful" details="" size="78270" time="1892" location="D:\sbtrepo\cache\org.eclipse.jetty\jetty-io\jars\jetty-io-7.3.0.v20110203.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/7.3.0.v20110203/jetty-io-7.3.0.v20110203.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-continuation">
+			<revision name="7.3.0.v20110203" status="release" pubdate="20110204003735" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
+				<metadata-artifact status="no" details="" size="6495" time="0" location="D:\sbtrepo\cache\org.eclipse.jetty\jetty-continuation\ivy-7.3.0.v20110203.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-continuation/7.3.0.v20110203/jetty-continuation-7.3.0.v20110203.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-server" conf="compile, runtime" rev="7.3.0.v20110203" rev-constraint-default="7.3.0.v20110203" rev-constraint-dynamic="7.3.0.v20110203" callerrev="7.3.0.v20110203"/>
+				<artifacts>
+					<artifact name="jetty-continuation" type="jar" ext="jar" status="successful" details="" size="20118" time="1592" location="D:\sbtrepo\cache\org.eclipse.jetty\jetty-continuation\jars\jetty-continuation-7.3.0.v20110203.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-continuation/7.3.0.v20110203/jetty-continuation-7.3.0.v20110203.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.servlet" name="servlet-api">
+			<revision name="2.5" status="release" pubdate="20060717190957" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<metadata-artifact status="no" details="" size="2347" time="0" location="D:\sbtrepo\cache\javax.servlet\servlet-api\ivy-2.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/servlet/servlet-api/2.5/servlet-api-2.5.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-server" conf="compile, runtime" rev="2.5" rev-constraint-default="2.5" rev-constraint-dynamic="2.5" callerrev="7.3.0.v20110203"/>
+				<artifacts>
+					<artifact name="servlet-api" type="jar" ext="jar" status="successful" details="" size="105112" time="2043" location="D:\sbtrepo\cache\javax.servlet\servlet-api\jars\servlet-api-2.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-xml">
+			<revision name="7.3.0.v20110203" status="release" pubdate="20110204004348" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
+				<metadata-artifact status="no" details="" size="6429" time="0" location="D:\sbtrepo\cache\org.eclipse.jetty\jetty-xml\ivy-7.3.0.v20110203.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-xml/7.3.0.v20110203/jetty-xml-7.3.0.v20110203.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-webapp" conf="default, compile, runtime, master" rev="7.3.0.v20110203" rev-constraint-default="7.3.0.v20110203" rev-constraint-dynamic="7.3.0.v20110203" callerrev="7.3.0.v20110203"/>
+				<artifacts>
+					<artifact name="jetty-xml" type="jar" ext="jar" status="successful" details="" size="29830" time="1581" location="D:\sbtrepo\cache\org.eclipse.jetty\jetty-xml\jars\jetty-xml-7.3.0.v20110203.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-xml/7.3.0.v20110203/jetty-xml-7.3.0.v20110203.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-util">
+			<revision name="7.3.0.v20110203" status="release" pubdate="20110204003624" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
+				<metadata-artifact status="no" details="" size="6473" time="0" location="D:\sbtrepo\cache\org.eclipse.jetty\jetty-util\ivy-7.3.0.v20110203.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/7.3.0.v20110203/jetty-util-7.3.0.v20110203.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-xml" conf="compile, runtime" rev="7.3.0.v20110203" rev-constraint-default="7.3.0.v20110203" rev-constraint-dynamic="7.3.0.v20110203" callerrev="7.3.0.v20110203"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-io" conf="compile, runtime" rev="7.3.0.v20110203" rev-constraint-default="7.3.0.v20110203" rev-constraint-dynamic="7.3.0.v20110203" callerrev="7.3.0.v20110203"/>
+				<artifacts>
+					<artifact name="jetty-util" type="jar" ext="jar" status="successful" details="" size="203840" time="1773" location="D:\sbtrepo\cache\org.eclipse.jetty\jetty-util\jars\jetty-util-7.3.0.v20110203.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/7.3.0.v20110203/jetty-util-7.3.0.v20110203.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.11.8" status="release" pubdate="20160304232633" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.8/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2685" time="0" location="D:\sbtrepo\cache\org.scala-lang\scala-library\ivy-2.11.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.pom"/>
+				<caller organisation="scalainaction" name="wekanban_2.11" conf="test, compile, runtime" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="successful" details="" size="5744974" time="16221" location="D:\sbtrepo\cache\org.scala-lang\scala-library\jars\scala-library-2.11.8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
